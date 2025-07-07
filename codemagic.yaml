@@ -1,0 +1,9 @@
+workflows:
+  android-workflows
+    name: Build Android App
+    enviroment:
+      android: true
+    scripts:
+      - ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/global/global.apk
