@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/adapter_student_exam_schedule_exam_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:elevation="10dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/adapter_student_examList_nameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="#E7F1EE">
+            <TextView
+                android:id="@+id/adapter_student_examList_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textSize="@dimen/primaryText"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textHeading"
+                />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textSize="@dimen/secondaryText"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textHeading"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_marginTop="8dp"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true">
+
+
+                <LinearLayout
+                    android:id="@+id/adapter_studentexam_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                   >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/examSchedule"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/secondaryText"
+                        android:background="@drawable/red_curve_border"
+                        android:textColor="@color/redDanger"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/adapter_studentexam_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/examresult"
+                        android:textStyle="bold"
+                       android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/secondaryText"
+                        android:background="@drawable/green_curve_border"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center|end"
+            android:padding="10dp"
+            android:background="@color/transparent"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/adapter_studentexam_result"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/red_curve_border">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/examresult"
+                    android:textColor="@color/redDanger"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/adapter_studentexam_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/yellow_curve_border">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/examSchedule"
+                    android:textColor="@color/yellow"/>
+
+            </LinearLayout>
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/adapter_tags">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/moduleiamge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:tint="@color/hintDark"
+            android:src="@drawable/ic_videocam"
+            />
+        <TextView
+            android:id="@+id/modulename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Timetable"
+            android:textColor="@color/hintDark"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+    </LinearLayout>
+</LinearLayout>

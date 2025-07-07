@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qdocs.smartschool">
+
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_FILE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <application
+        android:name=".utils.MyApp"
+        android:allowBackup="false"
+        android:configChanges="orientation|screenSize"
+        android:exported="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".students.CbseExaminationActivity"
+            android:exported="false" />
+        `<activity
+            android:name=".students.CbseTimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".students.StudentOfflinePayment"
+            android:exported="false" />
+        <activity
+            android:name=".students.BehaviourComment"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentVideoTutorialPlay"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentHomeworkNew"
+            android:exported="true" />
+        <activity
+            android:name=".students.NewDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentCoursePerformance"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentUploadDocument"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentDailyAssignment"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentProcessingFees"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentCourseDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentOnlineCourse"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentStartLessonActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|uiMode"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentLiveClasses"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentOfflinePaymentList"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentGmeetLiveClasses"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentBehaviourReport"
+            android:exported="true" />
+        <activity
+            android:name=".students.NotificationList"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentOnlineExamQuestionsNew"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentOnlineExamResult"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentOnlineExam"
+            android:exported="true" />
+        <activity
+            android:name=".AboutSchool"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentTimeline"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentAddTimeLine"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentEditTimeLine"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentDocuments"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentProfileDetailsNew"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentAddAssignment"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentEditAssignment"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentUploadHomework"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentFees"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentNoticeBoard"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentExaminationList"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentReportCard_ExamListResult"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentSubjectList"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentTeachersList"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentTransportRoutes"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentDownloads"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentAttendance"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentReportCard_ExamList"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentExamSchedule_ExamList"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentExamSchedule"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentVisitorBook"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentHostel"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentLibraryBook"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentClassTimetable"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentSyllabusTimetable"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentSyllabusStatus"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentLibraryBookIssued"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentAppyLeave"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentAddLeave"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentEditLeave"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentSyllabus"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentOnlineQuizResult"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentSyllabuslesson"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentOnlineCourseQuiz"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TakeUrl"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".OpenPdf"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentTasks"
+            android:exported="true" />
+        <activity
+            android:name=".students.StudentTasksEdit"
+            android:exported="true" />
+        <activity
+            android:name=".students.Payment"
+            android:exported="true" />
+        <activity
+            android:name=".students.CoursePayment"
+            android:exported="true" />
+        <activity
+            android:name=".students.CourseVideoPlay"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".students.LiveClasses"
+            android:exported="false" />
+
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

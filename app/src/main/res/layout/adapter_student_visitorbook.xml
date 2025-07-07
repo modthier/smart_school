@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/adapter_student_homework_viewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/headLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/visitor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:text="Sonia Marsh"
+                android:textSize="@dimen/heading"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textHeading"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="15dp"
+                android:gravity="end|center"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+
+               >
+
+                <ImageView
+                    android:id="@+id/downloadBtn"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_nav_download"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:weightSum="3"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_below="@+id/adapter_studentleave_headLayout"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/purpose"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_purposeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_phoneTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/idcard"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_idcardTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noofperson"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_no_of_personTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_dateTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intime"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_intimeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/outtime"
+                        android:textSize="@dimen/secondaryText"
+                        android:textColor="@color/textHeading"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_outtimeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_noteTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class 1 - A"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

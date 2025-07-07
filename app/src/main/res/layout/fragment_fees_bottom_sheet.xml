@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        >
+
+        <TextView
+            android:id="@+id/fees_bottomSheet_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:padding="10dp"
+            android:text="@string/processingfees"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/primaryText" />
+
+        <ImageView
+            android:id="@+id/fees_bottomSheet_crossBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:textStyle="bold"
+            android:text="@string/paymentid"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/paymentDate"
+           android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:textStyle="bold"
+            android:text="@string/paymentDiscount"
+            android:gravity="left"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/paymentFine"
+            android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/paymentPaid"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fees_bottomSheet_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

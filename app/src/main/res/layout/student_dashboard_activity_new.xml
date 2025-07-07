@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_activity"
+    android:background="#E1EDE9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Action-bar looking view -->
+    <FrameLayout
+        android:id="@+id/actionBar"
+        android:background="#E1EDE9"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/drawer_indicator"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/drawer_selector"
+                android:layout_gravity="start" />
+
+            <ImageView
+                android:id="@+id/actionBar_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:maxHeight="45dp"
+                android:minWidth="150dp"
+                android:padding="10dp"
+                android:minHeight="30dp"
+                android:src="@drawable/splash_logo"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="60dp"
+                android:layout_toEndOf="@+id/drawer_indicator"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true" />
+
+
+            <FrameLayout
+                android:id="@+id/notification_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/textHeading"
+                    android:src="@drawable/ic_add_alert"/>
+
+                <TextView
+                    android:id="@+id/unread_count"
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="right|end|top"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    <!-- Action-bar looking view -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E1EDE9"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/patientProfile_profileImageview"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:src="@drawable/placeholder_user"
+                android:layout_marginTop="30dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karan Sharma"
+                android:textAllCaps="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/admissionno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admission No. 1800 Class 1-A"
+                android:textAllCaps="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+               />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:elevation="10dp"
+          app:cardBackgroundColor="@color/white"
+          app:cardCornerRadius="20dp">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Recently Used"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="@color/hintDark"
+                        android:src="@drawable/ic_online_exams"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="E-Connect"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/hintDark"
+                        android:textSize="@dimen/secondaryText"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:tint="@color/hintDark"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_dashboard_homework"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Homework"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/hintDark"
+                        android:textSize="@dimen/secondaryText"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="@color/hintDark"
+                        android:src="@drawable/ic_dashboard_attendance"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Attendance"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/hintDark"
+                        android:textSize="@dimen/secondaryText"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="@color/hintDark"
+                        android:src="@drawable/ic_open_book"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Marks"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/hintDark"
+                        android:textSize="@dimen/secondaryText"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Academic"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/primaryText"
+                        android:layout_height="wrap_content"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_nav_timeline"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Timetable"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:tint="@color/hintDark"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_dashboard_homework"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Homework"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_nav_examination"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Examination"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Marks"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Online Exam"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Online Course"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="E-Learning"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/primaryText"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_online_exams"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Online Exam"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:tint="@color/hintDark"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_onlinecourse"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Online Course"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_dashboard_attendance"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Attendance"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Marks"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Homework"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/primaryText"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_online_exams"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="E-Connect"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:tint="@color/hintDark"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_dashboard_homework"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Homework"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_dashboard_attendance"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Attendance"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Marks"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Recently Used"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/primaryText"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_online_exams"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="E-Connect"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:tint="@color/hintDark"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_dashboard_homework"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Homework"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_dashboard_attendance"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Attendance"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Marks"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Recently Used"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/primaryText"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:tint="@color/hintDark"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Recently Used"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/primaryText"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:tint="@color/hintDark"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/hintDark"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/hintDark"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+          </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

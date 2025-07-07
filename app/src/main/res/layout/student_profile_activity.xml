@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qdocs.smartschool.students.StudentProfileDetailsNew"
+    android:background="@drawable/img_background_main"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="false"
+            android:elevation="8dp"
+            android:layout_marginEnd="@dimen/card_end"
+            android:layout_marginStart="@dimen/card_start"
+            app:cardCornerRadius="0dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/profile_headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@color/white"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/studentProfile_profiledetails"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:id="@+id/studentProfile_nameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/largeheading"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/studentProfile_classTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/studentProfile_nameTV"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                    <TextView
+                        android:id="@+id/studentProfile_admissionNoHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/studentProfile_classTV"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/admissionNo"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                    <TextView
+                        android:id="@+id/studentProfile_admissionNoTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/studentProfile_classTV"
+                        android:layout_toEndOf="@id/studentProfile_admissionNoHeader"
+                        android:text="@string/empty"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                    <LinearLayout
+                        android:id="@+id/rollno_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/studentProfile_admissionNoTV"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/studentProfile_rollNoHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/RollNo"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+
+                        <TextView
+                            android:id="@+id/studentProfile_rollNoTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/empty"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/barcode_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rollno_layout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/studentProfile_barcodeHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/barcode"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+
+                        <ImageView
+                            android:id="@+id/studentProfile_barcodeIV"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:text="@string/empty"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/qrcode_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/barcode_layout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/studentProfile_qrcodeHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/qrcode"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+
+                        <ImageView
+                            android:id="@+id/studentProfile_qrcodeIV"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:text="@string/empty"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_toEndOf="@id/studentProfile_profiledetails"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/studentProfile_profileImageview"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/behaviourscore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/textHeading" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardElevation="5dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/profileTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="fixed"
+                    app:tabGravity="fill"
+                    app:tabTextAppearance="@style/CustomTablayout" />
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/profileViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

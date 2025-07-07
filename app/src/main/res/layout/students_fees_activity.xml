@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feeheading"
+                android:textColor="@color/textHeading"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/topimage"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/feespage"/>
+        </LinearLayout>
+    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="10sp"
+                    android:weightSum="3">
+
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                      >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/fees"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/fees"
+                                android:textStyle="bold"
+                                android:background="@drawable/back_select"
+                                android:textColor="@color/white"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/processingfees"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:background="@drawable/yellow_select"
+                                android:text="@string/processingfees"
+                                android:textColor="@color/white"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/offlinePayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:background="@drawable/green_curve_border"
+                                android:text="@string/offline_payment"
+                                android:textColor="@color/white"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/feesAdapter_containerCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fees_headTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:minHeight="40dp"
+                android:text="@string/grandTotal"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/amt"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/fees_amtTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="25/55"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+                    <TextView
+                        android:id="@+id/fees_amtfineTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="0.00"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/paymentDiscount"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/fees_discountTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="0.00"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/paymentFine"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/fees_fineTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="0.00"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/paymentPaid"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/fees_paidTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="0.00"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/balance"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/fees_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="0.00"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="479dp">
+
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                        android:id="@+id/pullToRefresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/studentFees_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:clickable="false"
+                            android:paddingBottom="20dp"
+                            android:divider="@color/transparent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

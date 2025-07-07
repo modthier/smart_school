@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/adapter_student_feesDetail_viewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/adapter_student_feesDetail_paymentId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:paddingEnd="5dp"
+            android:textSize="@dimen/secondaryText"
+            android:textColor="@color/hyperLink"
+            android:text="@string/paymentid"
+            />
+
+        <TextView
+            android:id="@+id/adapter_student_feesDetail_paymentDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/secondaryText"
+            android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:text="@string/paymentDate"
+            />
+
+        <TextView
+            android:id="@+id/adapter_student_feesDetail_paymentDiscount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:textSize="@dimen/secondaryText"
+            android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:text="@string/paymentDiscount"
+            />
+
+        <TextView
+            android:id="@+id/adapter_student_feesDetail_paymentFine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/secondaryText"
+            android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:text="@string/paymentFine"
+            />
+
+            <TextView
+                android:id="@+id/adapter_student_feesDetail_paymentPaid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/secondaryText"
+                android:gravity="center"
+                android:textColor="@color/textHeading"
+                android:text="@string/paymentPaid"
+                />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adapter_student_feesDetail_paymentNoteTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="@dimen/secondaryText"
+        android:textColor="@color/textHeading"
+        android:text="@string/note"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        />
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textSize="@dimen/secondaryText"
+        android:textStyle="bold"
+        android:textColor="@color/textHeading"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Collected By:"
+        />
+    <TextView
+        android:id="@+id/collected_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textSize="@dimen/secondaryText"
+        android:textColor="@color/textHeading"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Joe Black(9000)"
+        />
+</LinearLayout>-->
+</LinearLayout>
+
+

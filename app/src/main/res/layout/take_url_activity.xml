@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qdocs.smartschool.TakeUrl"
+    android:background="@drawable/img_login_background"
+    >
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo_small"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/login_layout" />
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_urlET_takeUrl"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_stlye"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_username_login"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_web_yellow"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:tint="@color/textHeading"
+                    android:layout_marginStart="10dp" />
+
+                <EditText
+                    android:id="@+id/et_domain_takeUrl"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="@string/domainHead"
+                    android:textColorHint="@color/textHeading"
+                    android:textSize="@dimen/primaryText"
+                    android:text=""
+                    android:textColor="@color/textHeading"
+                    android:singleLine="true"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/btn_submit_takeUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/yellow_curve"
+            android:layout_below="@id/layout_urlET_takeUrl">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/heading"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_rightarrow"
+                android:tint="@color/white"
+                android:layout_toRightOf="@+id/btn_login"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

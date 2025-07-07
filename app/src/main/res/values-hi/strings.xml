@@ -1,0 +1,587 @@
+<resources>
+    <string name="app_name">स्मार्ट स्कूल</string>
+    <string name="empty"></string>
+    <string name="submit_success">सफलतापूर्वक सबमिट </string>
+    <string name="upload">दस्तावेज अपलोड करें</string>
+
+    <!--TAKE URL PAGE-->
+    <string name="domainHead">अपने स्कूल का युआरएल दर्ज करें</string>
+    <string name="submit">जमा करें</string>
+    <string name="save">जमा करें</string>
+    <string name="send">भेजें </string>
+    <!--TAKE URL PAGE-->
+
+    <!--LOGIN PAGE    -->
+    <string name="login">लॉग इन करें</string>
+    <string name="username">नाम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="userNameHint">उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="userPasswordHint">पासवर्ड दर्ज करें</string>
+    <string name="usernamePasswordHint">कृपया उपयोगकर्ता नाम और पासवर्ड दर्ज करें</string>
+    <string name="forgotPassword">पासवर्ड भूल गए?</string>
+    <string name="changeUrl">डोमेन बदलें</string>
+    <string name="admin">व्यवस्थापक</string>
+    <!--LOGIN PAGE-->
+
+    <!--DASHBOARD DETAIL-->
+    <string name="thisMonth">इस महीने</string>
+    <string name="incomplete">अधूरा</string>
+    <string name="pendingTask">आज का लंबित कार्य</string>
+    <string name="calender">कैलेंडर</string>
+    <string name="today">आज का दिन</string>
+    <string name="taskAndEvents">कार्य और घटनाएँ</string>
+    <string name="about">विद्यालय की जानकारी </string>
+    <string name="Logout">लॉग आउट</string>
+    <!--DASHBOARD DETAIL-->
+
+    <!--MENU-->
+    <string name="home">होम</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="fees">फीस</string>
+    <string name="timeTable">कक्षा समय सारणी</string>
+    <string name="liveclasses">ज़ूम लाइव क्लास</string>
+    <string name="livegmeetclasses">जी-मीट लाइव क्लास</string>
+    <string name="homework">घर का पाठ</string>
+    <string name="onlineexam">ऑनलाइन परीक्षा</string>
+    <string name="examSchedule">परीक्षा कार्यक्रम</string>
+    <string name="noticeBoard">सूचना बोर्ड</string>
+    <string name="applyleave">अवकाश लागू करें</string>
+    <string name="downloadCenter">डाउनलोड सेंटर</string>
+    <string name="attendance">उपस्थिति</string>
+    <string name="examination">परीक्षा</string>
+    <string name="timeLine">टाइमलाइन</string>
+    <string name="documents">दस्तावेज</string>
+    <string name="transportRoute">परिवहन मार्ग</string>
+    <string name="hostelRoom">छात्रावास के कमरे</string>
+    <string name="examresult">परीक्षा परिणाम</string>
+    <string name="rank">श्रेणी</string>
+    <string name="examrank">परीक्षा श्रेणी</string>
+    <string name="notification">नोटिफिकेशन</string>
+    <string name="syllabus_status">सिलेबस की स्थिति</string>
+    <string name="studentbehaviour">छात्र व्यवहार</string>
+    <string name="behavioureport">बेहेवियर रिकार्ड्स</string>
+    <string name="behaviourscore">व्यवहार स्कोर</string>
+    <string name="visitorbook">आगंतुक पुस्तिका </string>
+    <string name="daily_assignment">दैनिक कार्य </string>
+    <string name="zoom">ज़ूम </string>
+    <string name="gmeet">जी-मीट </string>
+    <string name="elearning">इ -लर्निंग</string>
+    <string name="academic">शैक्षणिक  </string>
+    <string name="communicate">संचार </string>
+    <string name="todolist">कार्य सूची</string>
+    <string name="others">अन्य</string>
+    <string name="setting">सेटिंग्स</string>
+    <string name="cbseexamination">सीबीएसई परीक्षा</string>
+    <string name="cbseexam">सीबीएसई परीक्षा</string>
+    <string name="cbseexamresult">सीबीएसई परीक्षा परिणाम</string>
+    <string name="cbsetimetable">सीबीएसई समय सारिणी</string>
+    <!--MENU-->
+
+    <!--PROFILE PAGE-->
+    <string name="father">पिता</string>
+    <string name="mother">मां</string>
+    <string name="guardian">अभिभावक</string>
+    <string name="admissionNo">प्रवेश संख्या</string>
+    <string name="RollNo">रोल नंबर</string>
+    <string name="barcode">बारकोड</string>
+    <string name="qrcode">QR कोड</string>
+    <string name="rte">आरटीई</string>
+    <string name="personalDetail">व्यक्तिगत विवरण </string>
+    <string name="parentsDetails">अभिभावक विवरण</string>
+    <string name="otherDetails">अन्य जानकारी</string>
+    <string name="admDate">प्रवेश तिथि</string>
+    <string name="dob">जन्म की तारीख</string>
+    <string name="gender">लिंग</string>
+    <string name="category">वर्ग</string>
+    <string name="mobileNo">मोबाइल नंबर</string>
+    <string name="caste">जाति</string>
+    <string name="religion">धर्म</string>
+    <string name="email">ईमेल</string>
+    <string name="address">पता</string>
+    <string name="currentAdd">वर्तमान पता</string>
+    <string name="permanentAdd">स्थाई पता</string>
+    <string name="fatherName">पिता का नाम</string>
+    <string name="fatherPhone">पिता का फोन</string>
+    <string name="fatherOcc">पिता का व्यवसाय</string>
+    <string name="motherName">पिता का नाम</string>
+    <string name="motherPhone">माँ का फ़ोन</string>
+    <string name="motherOcc">मां का व्यवसाय</string>
+    <string name="gardianName">अभिभावक का नाम</string>
+    <string name="gardianEmail">गार्डियन का ईमेल</string>
+    <string name="gardianRelation">गार्डियन का संबंध</string>
+    <string name="gardianPhone">गार्डियन का फोन</string>
+    <string name="gardianOcc">गार्डियन का व्यवसाय</string>
+    <string name="gardianAdd">गार्डियन का पता</string>
+    <string name="previousSchool">पिछला स्कूल</string>
+    <string name="nationalIdNo">राष्ट्रीय पहचान संख्या</string>
+    <string name="localIdNo">स्थानीय आईडी नंबर</string>
+    <string name="bankAcNo">बैंक खाता संख्या</string>
+    <string name="ifscCode">IFSC कोड</string>
+    <string name="pickup_point">पिक अप बिंदु</string>
+    <string name="score_per">स्कोर (%)</string>
+    <string name="exam_rank">परीक्षा रैंक</string>
+    <string name="bankName">बैंक का नाम</string>
+    <string name="vehicleRoute">वाहन मार्ग</string>
+    <string name="bloodGroup">रक्त समूह</string>
+    <string name="studentHouse">छात्र सभा</string>
+    <string name="height">ऊंचाई</string>
+    <string name="weight">वजन</string>
+    <string name="asOnDate">आज की तारीख में</string>
+    <!--PROFILE PAGE    -->
+
+    <!--FEES -->
+    <string name="processingfees"> प्रसंस्करण शुल्क</string>
+    <string name="processing"> प्रोसेस हो रहा है</string>
+    <string name="dateofPayment">भुगतान की तारीख</string>
+    <string name="paymentMode">भुगतान मोड</string>
+    <string name="paymentFrom">भुगतान</string>
+    <string name="reference"> संदर्भ</string>
+    <string name="transportfeesmonth">परिवहन शुल्क माह</string>
+    <string name="amount"> भुगतान की गई राशि</string>
+    <string name="dueDate">नियत तारीख</string>
+    <string name="feescode">फीस कोड</string>
+    <string name="amt">रकम</string>
+    <string name="paidAmt">अदा की</string>
+    <string name="balanceAmt">शेष राशि</string>
+    <string name="feeDetail">फीस का विवरण</string>
+    <string name="balance">संतुलन</string>
+    <string name="fine">अतिरिक्त राशि</string>
+    <string name="discountMsg">की छूट </string>
+    <string name="payFees">शुल्क भुगतान करें</string>
+    <string name="paymentId">आईडी</string>
+    <string name="paid">चुकाया गया</string>
+    <string name="unpaid">अवैतनिक</string>
+    <string name="partial">आंशिक</string>
+    <string name="app_rej">अनुमोदित/अस्वीकृत</string>
+    <string name="paymentDate">दिनांक</string>
+    <string name="paymentDiscount">छूट</string>
+    <string name="paymentFine">ठीक</string>
+    <string name="paymentPaid">भुगतान किया है</string>
+    <string name="pay">भुगतान करना</string>
+    <string name="noduedate">कोई नियत तिथि नहीं</string>
+    <string name="cash">नकद</string>
+    <string name="bankpayment">बैंक भुगतान</string>
+    <string name="banktransfer">बैंक हस्तांतरण</string>
+    <string name="upi">UPI</string>
+    <string name="discount">छूट</string>
+    <string name="choosepaymode">भुगतान मोड चुनें</string>
+    <string name="paymentdate">भुगतान की तारीख</string>
+    <string name="submitdate">सबमिट दिनांक</string>
+    <string name="statusdate">स्थिति दिनांक</string>
+    <string name="paymentid">भुगतान आईडी</string>
+    <string name="feesgroup">फीस समूह</string>
+    <string name="paymentmodeError">भुगतान मोड फ़ील्ड आवश्यक है। </string>
+    <string name="paymentdateError">भुगतान की तारीख फ़ील्ड आवश्यक है। </string>
+    <string name="paymentfromError">फ़ील्ड से भुगतान आवश्यक है। </string>
+    <string name="paymentamountError">भुगतान की गई राशि फ़ील्ड आवश्यक है। </string>
+    <!--FEES-->
+
+    <!--LEAVE-->
+    <string name="AppliedDate">आवेदन की तिथि</string>
+    <string name="fromDate">तारीख से</string>
+    <string name="fromTime">समय से</string>
+    <string name="toTime">समय पर</string>
+    <string name="routepickuppoint">रूट पिकअप पॉइंट</string>
+    <string name="dateError"> दिनांक फ़ील्ड आवश्यक है </string>
+    <string name="applyDateError"> कृपया आवेदन की तिथि चुनें </string>
+    <string name="fromDateError">कृपया तारीख से चयन करें </string>
+    <string name="toDateError"> कृपया तारीख से चयन करें </string>
+    <string name="reason">कारण फ़ील्ड आवश्यक है </string>
+    <string name="toDate">तारीख तक</string>
+    <string name="editLeave"> अवकाश संपादित करें </string>
+    <string name="editleave">अवकाश संपादित</string>
+    <string name="createNewLeave">छुट्टी आवेदन जोड़ें </string>
+    <string name="awaited"> बहुप्रतीक्षित </string>
+    <string name="finished"> ख़त्म होना </string>
+    <string name="cancelled"> रद्द </string>
+    <string name="completed"> पूरा </string>
+    <string name="incompleted"> अधूरा </string>
+    <string name="pending"> लंबित </string>
+    <string name="applied"> लागू </string>
+    <string name="approved"> स्वीकृत </string>
+    <string name="disapproved"> अस्वीकृत </string>
+    <string name="rejected"> खारिज </string>
+    <string name="fail"> विफल</string>
+    <string name="pass"> उत्तीर्ण करना</string>
+    <!--LEAVE-->
+
+    <!--HOMEWORK-->
+    <string name="homeworkDate">बनाया था</string>
+    <string name="submissionDate">प्रस्तुत करने</string>
+    <string name="evaluationDate">मूल्यांकन</string>
+    <string name="createdBy">के द्वारा बनाई गई</string>
+    <string name="evaluatedBy">द्वारा मूल्यांकन</string>
+    <string name="homeworkDetails">होमवर्क विवरण</string>
+    <string name="upload_homework">होमवर्क अपलोड करें</string>
+    <string name="all">सब</string>
+    <string name="assigned_on">सौंपा गया</string>
+    <string name="assigned_by">द्वारा सौंपा</string>
+    <string name="due_on"> को देय</string>
+    <!--HOMEWORK-->
+
+    <!--Attendance Page-->
+    <string name="present">वर्तमान</string>
+    <string name="absent">अनुपस्थित</string>
+    <string name="late">देर से</string>
+    <string name="halfDay">आधा दिन</string>
+    <string name="holiday">छुट्टी का दिन</string>
+    <string name="present_p">P</string>
+    <string name="absent_a">A</string>
+    <string name="half_f">F</string>
+    <string name="late_l">L</string>
+    <string name="holiday_h">H</string>
+    <!--Attendance Page-->
+
+    <!--DOWNLOAD CENTER PAGE-->
+    <string name="download">डाउनलोड</string>
+    <string name="assignment">  कार्य </string>
+    <string name="studyMaterial"> अध्ययन सामग्री</string>
+    <string name="syllabus"> पाठ्यक्रम</string>
+    <string name="otherDownload"> अन्य डाउनलोड</string>
+    <string name="contents">विषय</string>
+    <string name="videoTutorial">वीडियो ट्यूटोरियल</string>
+    <!--DOWNLOAD CENTER PAGE-->
+
+    <!--ONLINE EXAM-->
+    <string name="classduration">कक्षा की अवधि</string>
+    <string name="startEndTime">प्रारंभ समय / समाप्ति समय</string>
+    <string name="date">दिनांक</string>
+    <string name="minutes">(मिनट)</string>
+    <string name="datetime">दिनांक समय</string>
+    <string name="max">अधिकतम अंक</string>
+    <string name="min">न्यूनतम अंक</string>
+    <string name="attachment">संलग्नक</string>
+    <string name="datefrom">तारीख से</string>
+    <string name="dateto">तारीख तक</string>
+    <string name="totalattempts">कुल प्रयास</string>
+    <string name="classes">कक्षा</string>
+    <string name="classTeacher">कक्षा शिक्षक</string>
+    <string name="attempted">प्रयास किया</string>
+    <string name="duration">अवधि</string>
+    <string name="quiz">क्विज</string>
+    <string name="point">अंक</string>
+    <string name="totalmarks">कुल अंक</string>
+    <string name="exams">परीक्षा</string>
+    <string name="subjectdetail">विषय विवरण</string>
+    <string name="totalattempt">कुल प्रयास</string>
+    <string name="status">स्थिति</string>
+    <string name="passing_per">पासिंग प्रतिशत</string>
+    <string name="total_ques">कुल सवाल</string>
+    <string name="descriptive_ques">वर्णनात्मक प्रश्न</string>
+    <string name="question">प्रश्न</string>
+    <string name="answer">उत्तर</string>
+    <string name="answerwordcount">उत्तर शब्द गणना</string>
+    <string name="previous">पिछला</string>
+    <string name="next">आगे</string>
+    <string name="total_exam_marks">कुल अंक</string>
+    <string name="total_scored_marks">प्राप्त अंक</string>
+    <string name="not_attempt">प्रयास नहीं किया</string>
+    <string name="correct">सही</string>
+    <string name="wrong">ग़लत</string>
+    <string name="incorrect">ग़लत</string>
+    <string name="startexam">परीक्षा प्रारंभ करें</string>
+    <string name="starttime">समय शुरू</string>
+    <string name="onlineexamresult">ऑनलाइन परीक्षा परिणाम</string>
+    <string name="your_answer">आपका उत्तर</string>
+    <string name="teacher_remark">शिक्षक टिप्पणी</string>
+    <string name="remark">टिप्पणी</string>
+    <!--ONLINE EXAM-->
+
+    <!--Exam Result (Exam List) PAGE-->
+    <string name="result">परिणाम</string>
+    <string name="grandTotal">कुल योग</string>
+    <string name="percentage">प्रतिशत</string>
+    <string name="grade">ग्रेड</string>
+    <string name="marks">मार्क्स </string>
+    <string name="negative">नेगटिव</string>
+    <string name="examfrom">परीक्षा आरंभ तिथि</string>
+    <string name="examto">परीक्षा अंतिम तिथि</string>
+    <string name="MarksObtained">प्राप्तांक</string>
+    <string name="passingMarks">पासिंग मार्क्स</string>
+    <string name="gradepoint">मूल्यांकन</string>
+    <string name="CreditHours">क्रेडिट घंटे</string>
+    <string name="QualityPoints">गुणवत्ता अंक</string>
+    <string name="note">नोट</string>
+    <!--Exam Result (Exam List) PAGE-->
+
+    <!--CLASS TIMETABLE-->
+    <string name="monday">सोमवार</string>
+    <string name="tuesday">मंगलवार</string>
+    <string name="wednesday">बुधवार</string>
+    <string name="thursday">गुरूवार</string>
+    <string name="friday">शुक्रवार</string>
+    <string name="saturday">शनिवार</string>
+    <string name="sunday">रविवार</string>
+    <string name="time">समय</string>
+    <string name="notschedule">अनुसूचित नहीं है</string>
+    <!--CLASS TIMETABLE-->
+
+    <!--LESSON PLAN-->
+    <string name="subject">विषय</string>
+    <string name="Lesson">पाठ विषय</string>
+    <string name="subtopics">उप विषय</string>
+    <string name="topics">विषय</string>
+    <string name="lessonplan">पाठ योजना</string>
+    <string name="lessons">पाठ</string>
+    <string name="presentation">प्रस्तुतीकरण</string>
+    <string name="general_obj">सामान्य उद्देश्य</string>
+    <string name="teaching_method">पढ़ाने का तरीका</string>
+    <string name="prev_know">पूर्व ज्ञान</string>
+    <string name="compre_ques">व्यापक प्रश्न</string>
+    <!--LESSON PLAN-->
+
+    <!--HOSTEL LIST PAGE-->
+    <string name="view">देखना</string>
+    <string name="hostelRoomType">कमरे जैसा</string>
+    <string name="hostelRoomNo">कमरा क्रमांक</string>
+    <string name="hostelRoomCost">कमरे की लागत</string>
+    <string name="costperbed">लागत प्रति बिस्तर</string>
+    <string name="noofbed">बिस्तर की संख्या</string>
+    <string name="assigned">सौंपा गया</string>
+    <!--HOSTEL LIST PAGE-->
+
+    <!--LIBRARY ISSUED-->
+    <string name="rackNo">रैक नं : </string>
+    <string name="quantity">मात्रा : </string>
+    <string name="price">पुस्तक मूल्य </string>
+    <string name="library">पुस्तकालय</string>
+    <string name="libraryBookIssued"> पुस्तक </string>
+    <string name="publisher">प्रकाशक</string>
+    <string name="createdOn">पर जोड़ा </string>
+    <string name="booksIssued">पुस्तकें जारी </string>
+    <string name="book">पुस्तकें</string>
+    <string name="bookNumber">पुस्तक नं </string>
+    <string name="issueDate">जारी करने की तिथि </string>
+    <string name="returnDate">वापसी की तिथि </string>
+    <string name="libraryStatus">स्थिति </string>
+    <string name="author">लेखक </string>
+    <string name="returned">लौटा हुआ</string>
+    <string name="notReturned">लौटा नहीं</string>
+    <!--LIBRARY ISSUED-->
+
+    <!--Transport Details-->
+    <string name="routeName">मार्ग का नाम</string>
+    <string name="vehicleNo">वाहन संख्या</string>
+    <string name="vehicleModel">वाहन मॉडल</string>
+    <string name="made">बनाया गया</string>
+    <string name="driverName">चालक का नाम</string>
+    <string name="driverLicence">चालक लाइसेंस</string>
+    <string name="driverContact">ड्राइवर से संपर्क करें</string>
+    <string name="routetitle">मार्ग का शीर्षक</string>
+    <string name="distance">दूरी (किमी)</string>
+    <string name="pickuptime">समय लेने</string>
+    <!--Transport Details-->
+
+    <!--TASK-->
+    <string name="task">नया कार्य </string>
+    <string name="createNewTask">टास्क जोड़ें</string>
+    <string name="selectDate">कार्य दिनांक </string>
+    <string name="taskTitle">कार्य का शीर्षक </string>
+    <string name="Reason">कारण </string>
+    <string name="selectDateError">कृपया कार्य दिनांक का चयन करें </string>
+    <string name="selectTitleError">कृपया कार्य शीर्षक दर्ज करें</string>
+    <!--TASK-->
+
+    <!--FORGOT PASSWORD-->
+    <string name="iAm">मैं हूँ</string>
+    <string name="student">छात्र</string>
+    <string name="parent">माता-पिता</string>
+    <!--FORGOT PASSWORD-->
+
+    <!--ONLINE COURSE-->
+    <string name="course_list">पाठ्यक्रम सूची</string>
+    <string name="courseIncludes">इस पाठ्यक्रम के लिए पाठ्यक्रम</string>
+    <string name="courseLearn">मैं क्या सीखूंगा ?</string>
+    <string name="description">विवरण</string>
+    <string name="courseOverview">पाठ्यक्रम अवलोकन</string>
+    <string name="courseDetail">पाठ्यक्रम विवरण</string>
+    <string name="startlesson">पाठ प्रारंभ करें</string>
+    <string name="quizresult">प्रश्नोत्तरी परिणाम</string>
+    <string name="lastupdated">आखरी अपडेट</string>
+    <string name="free">नि: शुल्क</string>
+    <string name="buynow">अभी खरीदें</string>
+    <string name="coursePayment">पाठ्यक्रम भुगतान</string>
+    <string name="savenext">सहेजें और अगला</string>
+    <string name="youranswer">आपका उत्तर</string>
+    <string name="reset">रीसेट</string>
+    <string name="courseperformance">पाठ्यक्रम प्रदर्शन</string>
+    <string name="section">अनुभाग</string>
+    <string name="correctanswer">सही जवाब</string>
+    <string name="totalquestion">कुल प्रश्न:</string>
+    <string name="wronganswer">गलत जवाब</string>
+    <string name="notanswer">प्रयास नहीं कियाr</string>
+    <string name="review">समीक्षाएँ</string>
+    <string name="courserating">पाठ्यक्रम की रेटिंग</string>
+    <string name="enterreview">कृपया समीक्षा दर्ज करें</string>
+    <!--ONLINE COURSE-->
+
+    <!--ABOUT-->
+    <string name="phone">फ़ोन</string>
+    <string name="schoolCode">स्कूल कोड</string>
+    <string name="currentSession">सत्र</string>
+    <string name="sessionStartMonth">सत्र शुरू माह</string>
+    <!--ABOUT-->
+
+    <string name="privacyPolicy">प्राइवेसी पालिसी</string>
+    <string name="version">Version 4.0</string>
+    <string name="maintainMessage">साइट रखरखाव के अधीन है</string>
+    <string name="verificationMessage">सिस्टम त्रुटि! आप अपंजीकृत संस्करण का उपयोग कर रहे हैं।</string>
+
+    <!--OTHERS-->
+    <string name="noStatus">कोई स्थिति नहीं</string>
+    <string name="noLimit">कोई सीमा नहीं</string>
+    <string name="addfile">फ़ाइल जोड़ें</string>
+    <string name="selectfile">अपलोड करने के लिए फ़ाइल का चयन करें</string>
+    <string name="noInternetMsg">कोई इंटरनेट कनेक्शन नहीं मिला</string>
+    <string name="apiErrorMsg">API से प्रत्युत्तर प्राप्त करने में असमर्थ</string>
+    <string name="invalidPassword">अमान्य उपयोगकर्ता नाम / पासवर्ड </string>
+    <string name="invalidUsername">अमान्य ईमेल या उपयोगकर्ता प्रकार</string>
+    <string name="hostel">हॉस्टल</string>
+    <string name="online_course">ऑनलाइन पाठ्यक्रम</string>
+    <string name="notScheduled">अनुसूचित नहीं है</string>
+    <string name="blank">परीक्षण परीक्षण</string>
+    <string name="noData">कोई डेटा नहीं मिला! </string>
+    <string name="noQuestionFound">कोई प्रश्न नहीं मिला, कृपया प्रशासक से संपर्क करें!!! </string>
+    <string name="toDo">करने के लिए सूची</string>
+    <string name="edittask">कार्य संपादित करें</string>
+    <string name="saveLang">क्या आप वाकई भाषा सहेजना चाहते हैं?</string>
+    <string name="applyLang">भाषा लागू करने के लिए आपको फिर से लॉगिन करना होगा</string>
+    <string name="reqlang">(भाषा लागू करने के लिए आपको फिर से लॉगिन करना होगा)</string>
+    <string name="reqcurrency">(मुद्रा लागू करने के लिए आपको फिर से लॉगिन करना होगा)</string>
+    <string name="language"> भाषा </string>
+    <string name="currency"> मुद्रा </string>
+    <string name="descriptionfield"> विवरण फ़ील्ड आवश्यक है </string>
+    <string name="titlefield"> शीर्षक फ़ील्ड आवश्यक है </string>
+    <string name="messagefield">संदेश फ़ील्ड आवश्यक है </string>
+    <string name="select_language">भाषा चुनें </string>
+    <string name="select_currency">एक मुद्रा चुनें </string>
+    <string name="chat">चैट</string>
+    <string name="delete">हटाएँ</string>
+    <string name="successdelete">सफलतापूर्वक हटाया गया</string>
+    <string name="selectChild">बच्चे का चयन करें</string>
+    <string name="childList">छात्र सूची</string>
+    <string name="logoutMsg">क्या आप लॉग आउट करना चाहते हैं?</string>
+    <string name="deleteMsg">क्या आप इसे हटाना चाहते हैं?</string>
+    <string name="yes">हाँ</string>
+    <string name="ok">Ok</string>
+    <string name="no">नहीं</string>
+    <string name="consolidate">समेकित मार्कशीट</string>
+    <string name="upcomingexam">आगामी परीक्षाएं</string>
+    <string name="closedexam">बंद परीक्षाएं</string>
+    <string name="exam">परीक्षा</string>
+    <string name="notice">नोटिस</string>
+    <string name="take_photo">कैमरा</string>
+    <string name="choose_from_gallery">गैलरी</string>
+    <string name="classhost">क्लास होस्ट</string>
+    <string name="rating">रेटिंग जोड़ें</string>
+    <string name="ratethis">रेटिंग जोड़ें</string>
+    <string name="ratings">रेटिंग</string>
+    <string name="comment">टिप्पणी</string>
+    <string name="cancel">रद्द</string>
+    <string name="Approve">ठीक है</string>
+    <string name="Pending">लंबित</string>
+    <string name="report_card">परीक्षा की रिपोर्ट</string>
+    <string name="exam_schedule">परीक्षा अनुसूची</string>
+    <string name="staff">शिक्षक</string>
+    <string name="teachers">शिक्षकों की समीक्षा</string>
+    <string name="reportCard">रिपोर्ट कार्ड</string>
+    <string name="switchStudent">छात्र स्विच करें</string>
+    <string name="day">दिन</string>
+    <string name="join">शामिल हों</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="science">विज्ञान</string>
+    <string name="mathematics">गणित</string>
+    <string name="hindi">हिंदी</string>
+    <string name="division">विभाजन</string>
+    <string name="duereturnDate">वापसी की तारीख</string>
+    <string name="Message">संदेश</string>
+    <string name="room">कक्ष</string>
+    <string name="valid_upto"> तक वैध है</string>
+    <string name="shareby">द्वारा साझा करें</string>
+    <string name="sharedate">साझा करने की तिथि</string>
+    <string name="upload_documents">दस्तावेज़ अपलोड करें</string>
+    <string name="title"> शीर्षक </string>
+    <string name="noticeDate">नोटिस की तारीख</string>
+    <string name="publishDate">प्रकाशित तिथि</string>
+    <string name="Documents">डाक्यूमेंट</string>
+    <string name="Awaited">बहुप्रतीक्षित</string>
+    <string name="validateregisterid">कृपया पंजीकृत ईमेल आईडी दर्ज करें</string>
+    <string name="validatelogintype">कृपया लॉगिन प्रकार चुनें</string>
+    <string name="commentreq">टिप्पणी क्षेत्र आवश्यक है!</string>
+    <string name="ratingreq">रेटिंग आवश्यक है!</string>
+    <string name="submitted">प्रस्तुत</string>
+    <string name="evaluated">का मूल्यांकन</string>
+    <string name="validateurl">कृपया URL दर्ज करें</string>
+    <string name="select">चुनना</string>
+    <string name="fileselected">फ़ाइल सफलतापूर्वक चयनित है</string>
+    <string name="choosefile">फाइलें चुनें</string>
+    <string name="quiztitle">क्विज़ शीर्षक</string>
+    <string name="noofquestion">प्रश्नों की संख्या</string>
+    <string name="online_payment">ऑनलाइन भुगतान</string>
+    <string name="offline_payment">ऑफ़लाइन भुगतान</string>
+    <!--OTHERS-->
+
+
+    <!--HEADING-->
+    <string name="feeheading">आपका शुल्क विवरण यहाँ है!</string>
+    <string name="offlineheading">ऑफ़लाइन बैंक भुगतान</string>
+    <string name="dailyassignmentheading">आपकी दैनिक असाइनमेंट सूची यहां है!</string>
+    <string name="documentheading">आपकी दस्तावेज़ सूची यहाँ है!</string>
+    <string name="downloadheading">आपका डाउनलोड केंद्र यहां है!</string>
+    <string name="lessonplanheading">आपकी पाठ योजना यहाँ है!</string>
+    <string name="timetableheading">आपका टाइम टेबल यहाँ है!</string>
+    <string name="dailycircularheading">आपका दैनिक परिपत्र यहाँ है!</string>
+    <string name="attendanceheading">आपकी उपस्थिति यहाँ है!</string>
+    <string name="visitorbookheading">आपकी आगंतुक पुस्तिका यहाँ है!</string>
+    <string name="uploaddocumentheading">दस्तावेज़ प्रपत्र यहाँ अपलोड करें!</string>
+    <string name="settingheading">आपकी ऐप सेटिंग यहां है!</string>
+    <string name="startlessonheading">आपकी पाठ सूची यहाँ है!</string>
+    <string name="appliedleaveheading">आपकी एप्लाइड लीव सूची यहां है!</string>
+    <string name="coursedetailheading">आपका पाठ्यक्रम विवरण यहाँ है!</string>
+    <string name="courseperformaneheading">आपका कोर्स प्रदर्शन सूची यहाँ है!</string>
+    <string name="examlistheading">आपकी परीक्षा सूची यहां है!</string>
+    <string name="examresultheading">आपका परीक्षा परिणाम यहां है!</string>
+    <string name="examscheduleheading">आपका परीक्षा कार्यक्रम यहां है!</string>
+    <string name="gmeetheading">आपकी जी मीट लाइव कक्षाएँ यहाँ हैं!</string>
+    <string name="homeworkheading">आपका होमवर्क लिस्ट यहाँ है!</string>
+    <string name="zoomheading">आपकी ज़ूम लाइव कक्षाओं की सूची यहाँ है!</string>
+    <string name="behaviourreportheading">छात्र व्यवहार रिपोर्ट यहाँ है!</string>
+    <string name="onlinecourseheading">आपका ऑनलाइन कोर्स यहां है!</string>
+    <string name="onlineexamheading">आपकी ऑनलाइन परीक्षा सूची यहां है!</string>
+    <string name="addassignmentheading">यहां से दैनिक कार्य जोड़ें!</string>
+    <string name="downloadcenterheading">आपका डाउनलोड केंद्र यहाँ है!</string>
+    <string name="editassignmentheading">दैनिक असाइनमेंट यहां से संपादित करें!</string>
+    <string name="addleaveheading">यहां से छुट्टी जोड़ें!</string>
+    <string name="offlinebankpayment">ऑफ़लाइन बैंक भुगतान</string>
+    <string name="timelineheading">आपकी टाइमलाइन यहाँ है!</string>
+    <string name="noticeheading">आपका नोटिस बोर्ड यहाँ है!</string>
+    <string name="addtimelineheading">यहाँ से टाइमलाइन जोड़ें!</string>
+    <string name="transportheading">आपके परिवहन मार्ग यहाँ है!</string>
+    <string name="hostelheading">आपके हॉस्टल के कमरे की सूची यहाँ हैं!</string>
+    <string name="issuedbookheading">आपकी जारी की गई पुस्तकों की सूची यहाँ हैं!</string>
+    <string name="bookheading">आपकी पुस्तकों की सूची यहाँ हैं!</string>
+    <string name="pendingtaskheading">आपके कार्यों की सूची यहाँ है!</string>
+    <string name="teacherheading">आपके शिक्षकों की रेटिंग यहाँ है!</string>
+    <string name="syllabusheading">आपका सिलेबस स्टेटस यहाँ है!</string>
+    <string name="syllabuslessonheading">आपके पाठ यहाँ है!</string>
+    <string name="offlinepaymentheading">आपका ऑफ़लाइन भुगतान की सूची यहाँ है!</string>
+    <string name="uploadhomeworkheading">यहाँ से होमवर्क अपलोड करें!</string>
+    <string name="editleaveheading">छुट्टी यहां से संपादित करें!</string>
+    <string name="processfeeheading">आपके प्रसंस्करण शुल्क विवरण!</string>
+    <string name="edittimelineheading">यहाँ से टाइमलाइन संपादित करें!</string>
+    <string name="cbseexamlistheading">आपकी सीबीएसई परीक्षा परिणाम यहाँ है!</string>
+    <string name="cbsetimetableheading">आपका सीबीएसई परीक्षा कार्यक्रम यहां है!</string>
+    <string name="onlineresultheading">आपका ऑनलाइन परीक्षा परिणाम यहाँ है!</string>
+    <!--HEADING-->
+
+    <!--VISITOR-->
+    <string name="purpose">उद्देश्य</string>
+    <string name="idcard">परिचय पत्र</string>
+    <string name="noofperson">व्यक्ति की संख्या</string>
+    <string name="intime">समय के भीतर</string>
+    <string name="outtime">बाहर जाने का समय</string>
+    <string name="uploaddate"> डालने की तारिक </string>
+    <string name="totalfees"> कुल शुल्क</string>
+    <!--VISITOR-->
+
+</resources>

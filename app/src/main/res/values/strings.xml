@@ -1,0 +1,588 @@
+<resources>
+    <string name="app_name">Global</string>
+    <string name="empty"></string>
+    <string name="submit_success">Submit Successfully</string>
+    <string name="upload">Upload File</string>
+
+    <!--TAKE URL PAGE-->
+    <string name="domainHead">Enter your school url</string>
+    <string name="submit">SUBMIT</string>
+    <string name="save">Save</string>
+    <string name="send">Send</string>
+    <!--TAKE URL PAGE-->
+
+    <!--LOGIN PAGE  -->
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="userNameHint">Plaese enter username</string>
+    <string name="userPasswordHint">Please enter password</string>
+    <string name="usernamePasswordHint">Please enter username and password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="changeUrl">Change Domain</string>
+    <string name="admin">Admin</string>
+    <!--LOGIN PAGE-->
+
+    <!--DASHBOARD DETAIL-->
+    <string name="thisMonth">This Month</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="pendingTask">My Pending Task</string>
+    <string name="today">Today\'s</string>
+    <string name="calender">Calender</string>
+    <string name="taskAndEvents">Task &amp; Events</string>
+    <string name="about">About School</string>
+    <string name="Logout">Logout</string>
+    <!--DASHBOARD DETAIL-->
+
+    <!--MENU-->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="fees">Fees</string>
+    <string name="timeTable">Class Timetable</string>
+    <string name="liveclasses">Zoom Live Classes</string>
+    <string name="livegmeetclasses">Gmeet Live Classes</string>
+    <string name="homework">Homework</string>
+    <string name="onlineexam">Online Examination</string>
+    <string name="examSchedule">Exam Schedule</string>
+    <string name="noticeBoard">Notice Board</string>
+    <string name="applyleave">Apply Leave</string>
+    <string name="downloadCenter">Download Center</string>
+    <string name="attendance">Attendance</string>
+    <string name="examination">Examinations</string>
+    <string name="cbseexamination">CBSE Examination</string>
+    <string name="cbseexam">CBSE Exam</string>
+    <string name="cbseexamresult">CBSE Exam Result</string>
+    <string name="cbsetimetable">CBSE Exam Timetable</string>
+    <string name="timeLine">Student Timeline</string>
+    <string name="documents">My Documents</string>
+    <string name="transportRoute">Transport Routes</string>
+    <string name="hostelRoom">Hostel Rooms</string>
+    <string name="notification">Notification</string>
+    <string name="examresult">Exam Result</string>
+    <string name="studentbehaviour">Student Behaviour</string>
+    <string name="behavioureport">Behaviour Records</string>
+    <string name="behaviourscore">Behaviour Score</string>
+    <string name="visitorbook">Visitor Book</string>
+    <string name="daily_assignment">Daily Assignment</string>
+    <string name="todolist">Calendar To Do List</string>
+    <string name="others">Others</string>
+    <string name="zoom">Zoom</string>
+    <string name="gmeet">Gmeet</string>
+    <string name="elearning">E-Learning</string>
+    <string name="academic">Academics</string>
+    <string name="communicate">Communicate</string>
+    <string name="syllabus_status">Syllabus Status</string>
+    <!--MENU-->
+
+    <!--PROFILE PAGE-->
+    <string name="father">Father</string>
+    <string name="mother">Mother</string>
+    <string name="guardian">Guardian</string>
+    <string name="admissionNo">Adm. No.</string>
+    <string name="RollNo">Roll Number</string>
+    <string name="barcode">Barcode</string>
+    <string name="qrcode">QR Code</string>
+    <string name="rte">RTE</string>
+    <string name="personalDetail">Personal</string>
+    <string name="admDate">Admission Date</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="category">Category</string>
+    <string name="mobileNo">Mobile Number</string>
+    <string name="caste">Caste</string>
+    <string name="religion">Religion</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="currentAdd">Current Address</string>
+    <string name="permanentAdd">Permanent Address</string>
+    <string name="parentsDetails">Parents</string>
+    <string name="fatherName">Father\'s Name</string>
+    <string name="fatherPhone">Father\'s Phone</string>
+    <string name="fatherOcc">Father\'s Occupation</string>
+    <string name="motherName">Father\'s Name</string>
+    <string name="motherPhone">Mother\'s Phone</string>
+    <string name="motherOcc">Mother\'s Occupation</string>
+    <string name="gardianName">Gardian\'s Name</string>
+    <string name="gardianEmail">Gardian\'s Email</string>
+    <string name="gardianRelation">Gardian\'s Relation</string>
+    <string name="gardianPhone">Gardian\'s Phone</string>
+    <string name="gardianOcc">Gardian\'s Occupation</string>
+    <string name="gardianAdd">Gardian\'s Address</string>
+    <string name="otherDetails">Other</string>
+    <string name="previousSchool">Previous School</string>
+    <string name="nationalIdNo">National ID Number</string>
+    <string name="localIdNo">Local ID Number</string>
+    <string name="bankAcNo">Bank Account Number</string>
+    <string name="bankName">Bank Name</string>
+    <string name="ifscCode">IFSC Code</string>
+    <string name="pickup_point">Pickup Point</string>
+    <string name="vehicleRoute">Vehicle Route</string>
+    <string name="bloodGroup">Blood Group</string>
+    <string name="studentHouse">Student House</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="asOnDate">As On Date</string>
+    <!--PROFILE PAGE -->
+
+    <!--LEAVE-->
+    <string name="AppliedDate">Apply Date</string>
+    <string name="fromDate">From Date</string>
+    <string name="fromTime">Time From</string>
+    <string name="toTime">Time To</string>
+    <string name="applyDateError">The Apply Date field is required </string>
+    <string name="fromDateError"> The From Date field is required </string>
+    <string name="dateError"> The Date field is required </string>
+    <string name="toDateError"> The To Date field is required </string>
+    <string name="reason"> The Reason field is required </string>
+    <string name="toDate">To Date</string>
+    <string name="editLeave"> Edit Leave </string>
+    <string name="editleave">Edit Leave</string>
+    <string name="createNewLeave"> Add Leave </string>
+    <string name="awaited"> Awaited </string>
+    <string name="finished"> Finished </string>
+    <string name="cancelled"> Cancelled </string>
+    <string name="completed"> Complete </string>
+    <string name="incompleted"> Incomplete </string>
+    <string name="pending"> Pending </string>
+    <string name="applied"> Applied </string>
+    <string name="approved"> Approved </string>
+    <string name="disapproved"> Disapproved</string>
+    <string name="rejected"> Rejected</string>
+    <string name="fail"> Fail</string>
+    <string name="pass"> Pass</string>
+
+    <!--LEAVE-->
+
+    <!--FEES -->
+    <string name="processingfees"> Processing Fees</string>
+    <string name="processing"> Processing</string>
+    <string name="dueDate">Due Date</string>
+    <string name="feescode">Fees Code</string>
+    <string name="routepickuppoint">Route Pickup Point</string>
+    <string name="amt">Amount</string>
+    <string name="dateofPayment">Date of Payment</string>
+    <string name="paymentMode">Payment Mode</string>
+    <string name="paymentFrom">Payment From</string>
+    <string name="transportfeesmonth">Transport Fees Month</string>
+    <string name="reference"> Reference</string>
+    <string name="amount"> Amount Paid</string>
+    <string name="paidAmt">Paid Amt</string>
+    <string name="balanceAmt">Balance Amt</string>
+    <string name="feeDetail">Fees Details</string>
+    <string name="balance">Balance</string>
+    <string name="fine">Fine</string>
+    <string name="discount">Discount</string>
+    <string name="payFees">Pay Fees</string>
+    <string name="discountMsg">Discount of </string>
+    <string name="paymentId">Id</string>
+    <string name="paid">Paid</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="partial">Partial</string>
+    <string name="paymentDate">Date</string>
+    <string name="paymentdate">Payment Date</string>
+    <string name="submitdate">Submit Date</string>
+    <string name="statusdate">Status Date</string>
+    <string name="app_rej">Approved/Rejected</string>
+    <string name="paymentid">Payment Id</string>
+    <string name="feesgroup">Fees Group</string>
+    <string name="paymentDiscount">Discount</string>
+    <string name="paymentFine">Fine</string>
+    <string name="paymentPaid">Paid</string>
+    <string name="pay">Pay</string>
+    <string name="noduedate">No Due Date</string>
+    <string name="cash">Cash</string>
+    <string name="bankpayment">Bank Payment</string>
+    <string name="banktransfer">Bank Transfer</string>
+    <string name="upi">UPI</string>
+    <string name="choosepaymode">Choose Payment Mode</string>
+    <string name="paymentmodeError">The Payment Mode field is required. </string>
+    <string name="paymentdateError">The Date Of Payment field is required. </string>
+    <string name="paymentfromError">The Payment From field is required. </string>
+    <string name="paymentamountError">The Amount Paid field is required. </string>
+    <!--FEES-->
+
+    <!--HOMEWORK PAGE-->
+    <string name="homeworkDate">Homework Date</string>
+    <string name="submissionDate">Submission Date</string>
+    <string name="evaluationDate">Evaluation Date</string>
+    <string name="createdBy">Created By</string>
+    <string name="evaluatedBy">Evaluated By</string>
+    <string name="homeworkDetails">Homework Details</string>
+    <string name="upload_homework">Upload Homework</string>
+    <string name="all">All</string>
+    <string name="assigned_on">Homework Date</string>
+    <string name="assigned_by">Assigned By</string>
+    <string name="due_on">Submission Date</string>
+    <!--HOMEWORK PAGE-->
+
+    <!--Attendance Page-->
+    <string name="present">Present</string>
+    <string name="absent">ABS</string>
+    <string name="late">Late</string>
+    <string name="halfDay">Half Day</string>
+    <string name="holiday">Holiday</string>
+    <string name="present_p">P</string>
+    <string name="absent_a">A</string>
+    <string name="half_f">F</string>
+    <string name="late_l">L</string>
+    <string name="holiday_h">H</string>
+    <!--Attendance Page-->
+
+    <!--DOWNLOAD CENTER PAGE-->
+    <string name="download">Download</string>
+    <string name="assignment"> Assignment </string>
+    <string name="studyMaterial"> Study Material</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="otherDownload">Others</string>
+    <string name="contents">Contents</string>
+    <string name="videoTutorial">Video Tutorial</string>
+    <!--DOWNLOAD CENTER PAGE-->
+
+    <!--ONLINE EXAM-->
+    <string name="startEndTime">Start Time / End Time</string>
+    <string name="date">Date</string>
+    <string name="datetime">Date Time</string>
+    <string name="classduration">Class Duration</string>
+    <string name="minutes">(Minutes)</string>
+    <string name="max">Max Marks</string>
+    <string name="min">Min Marks</string>
+    <string name="datefrom">Date From</string>
+    <string name="examfrom">Exam From</string>
+    <string name="dateto">Date To</string>
+    <string name="examto">Exam To</string>
+    <string name="totalattempts">Total Attempts</string>
+    <string name="classes">Class</string>
+    <string name="classTeacher">Class Teacher</string>
+    <string name="attempted">Attempted</string>
+    <string name="duration">Duration</string>
+    <string name="quiz">Quiz</string>
+    <string name="point">Point</string>
+    <string name="question">Question</string>
+    <string name="total_ques">Total Questions</string>
+    <string name="subjectdetail">Subject Details</string>
+    <string name="totalattempt">Total Attempt</string>
+    <string name="status">Status</string>
+    <string name="attachment">Attachment</string>
+    <string name="passing_per">Passing (%)</string>
+    <string name="exam_rank">Exam Rank</string>
+    <string name="rank">Rank</string>
+    <string name="examrank">Exam Rank</string>
+    <string name="score_per">Score (%)</string>
+    <string name="descriptive_ques">Descriptive Questions</string>
+    <string name="answer">Answer</string>
+    <string name="answerwordcount">Answer Word Limit</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="total_exam_marks">Total Exam Marks</string>
+    <string name="totalmarks">Total Marks</string>
+    <string name="total_scored_marks">Total Scored Marks</string>
+    <string name="not_attempt">Not Attempted</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="startexam">Start Exam</string>
+    <string name="onlineexamresult">Online Exam Result</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="starttime">Start Time</string>
+    <string name="teacher_remark">Teacher Remark</string>
+    <string name="remark">Remark</string>
+    <!--ONLINE EXAM-->
+
+    <!--Exam Result (Exam List) PAGE-->
+    <string name="result">Result</string>
+    <string name="division">Division</string>
+    <string name="grandTotal">Grand Total</string>
+    <string name="totalfees"> Total Fees</string>
+    <string name="percentage">Percentage</string>
+    <string name="MarksObtained">Marks Obtained</string>
+    <string name="grade">Grade</string>
+    <string name="marks">Marks</string>
+    <string name="negative">Negative</string>
+    <string name="passingMarks">Min Marks</string>
+    <string name="gradepoint">Grade Point</string>
+    <string name="CreditHours">Credit Hours</string>
+    <string name="QualityPoints">Quality Points</string>
+    <string name="note">Note</string>
+    <!--Exam Result (Exam List) PAGE-->
+
+    <!--CLASS TIMETABLE-->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="time">Time</string>
+    <string name="notschedule">Not Scheduled</string>
+    <!--CLASS TIMETABLE-->
+
+    <!--LESSON PLAN-->
+    <string name="subject">Subject</string>
+    <string name="lessons">Lesson</string>
+    <string name="Lesson">Lesson Topic</string>
+    <string name="lessonplan">Lesson Plan</string>
+    <string name="topics">Topic</string>
+    <string name="subtopics">Sub Topic</string>
+    <string name="presentation">Presentation</string>
+    <string name="general_obj">General Objectives</string>
+    <string name="teaching_method">Teaching Method</string>
+    <string name="prev_know">Previous Knowledge</string>
+    <string name="compre_ques">Comprehensive Questions</string>
+    <!--LESSON PLAN-->
+
+    <!--HOSTEL LIST PAGE-->
+    <string name="view">View</string>
+    <string name="hostelRoomType">Room Type</string>
+    <string name="hostelRoomNo">Room No.</string>
+    <string name="hostelRoomCost">Room Cost</string>
+    <string name="costperbed">Cost per Bed</string>
+    <string name="noofbed">Number of bed</string>
+    <string name="room">Room</string>
+    <string name="assigned">Assigned</string>
+    <!--HOSTEL LIST PAGE-->
+
+    <!--LIBRARY ISSUED-->
+    <string name="rackNo">Rack No. </string>
+    <string name="quantity">Quantity </string>
+    <string name="price">Book Price </string>
+    <string name="createdOn">Post Date</string>
+    <string name="libraryBookIssued">Library Books</string>
+    <string name="booksIssued">Books Issued</string>
+    <string name="book">Books</string>
+    <string name="library">Library</string>
+    <string name="publisher">Publisher</string>
+    <string name="bookNumber">Book No. </string>
+    <string name="issueDate">Issue Date </string>
+    <string name="duereturnDate">Due Return Date </string>
+    <string name="returnDate">Return Date </string>
+    <string name="libraryStatus">Status </string>
+    <string name="author">Author </string>
+    <string name="returned">Returned</string>
+    <string name="notReturned">Not Returned</string>
+    <!--LIBRARY ISSUED-->
+
+    <!--Transport Details-->
+    <string name="routeName">Route Name</string>
+    <string name="vehicleNo">Vehicle Number</string>
+    <string name="vehicleModel">Vehicle Model</string>
+    <string name="driverName">Driver Name</string>
+    <string name="driverLicence">Driver Licence</string>
+    <string name="driverContact">Driver Contact</string>
+    <string name="routetitle">Route Title</string>
+    <string name="made">Made</string>
+    <string name="distance">Distance(km)</string>
+    <string name="pickuptime">Pickup Time</string>
+    <!--Transport Details-->
+
+    <!--TASK-->
+    <string name="task"> New Task </string>
+    <string name="createNewTask"> Add Task </string>
+    <string name="selectDate"> Task Date </string>
+    <string name="taskTitle"> Task Title </string>
+    <string name="Reason"> Reason </string>
+    <string name="selectDateError"> Please select task date </string>
+    <string name="selectTitleError"> Please enter task title </string>
+    <!--TASK-->
+
+    <!--FORGOT PASSWORD-->
+    <string name="iAm">I am</string>
+    <string name="student">Student</string>
+    <string name="parent">Parent</string>
+    <!--FORGOT PASSWORD-->
+
+    <!--ABOUT-->
+    <string name="phone">Phone</string>
+    <string name="schoolCode">School Code</string>
+    <string name="currentSession">Current Session</string>
+    <string name="sessionStartMonth">Session Start Month</string>
+    <!--ABOUT-->
+
+    <!--ONLINE COURSE-->
+    <string name="course_list">Online Course</string>
+    <string name="courseIncludes">Curriculum For This Course</string>
+    <string name="courseLearn">What will i learn ?</string>
+    <string name="description">Description</string>
+    <string name="courseOverview">Course Overview</string>
+    <string name="courseDetail">Course Details</string>
+    <string name="startlesson">Start Lesson</string>
+    <string name="lastupdated">Last Updated</string>
+    <string name="free">Free</string>
+    <string name="buynow">Buy Now</string>
+    <string name="quizresult">Quiz Result</string>
+    <string name="coursePayment">Course Payment</string>
+    <string name="savenext">Save and Next</string>
+    <string name="youranswer">Your Answer</string>
+    <string name="reset">Reset</string>
+    <string name="courseperformance">Course Performance</string>
+    <string name="section">Section</string>
+    <string name="correctanswer">Correct Answer</string>
+    <string name="totalquestion">Total Question:</string>
+    <string name="wronganswer">Wrong Answer</string>
+    <string name="notanswer">Not Attempted</string>
+    <string name="review">Reviews</string>
+    <string name="courserating">Course Rating</string>
+    <string name="enterreview">Please Enter Reviews</string>
+    <!--ONLINE COURSE-->
+
+    <string name="version">Version 4.0 </string>
+    <string name="verificationMessage">System Error! You are using Unregistered Addon.</string>
+    <string name="maintainMessage">Site is under Maintainence</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+
+    <!--OTHERS-->
+    <string name="noStatus">No Status</string>
+    <string name="noLimit">No Limit</string>
+    <string name="addfile">Add File</string>
+    <string name="selectfile">Select File to Upload</string>
+    <string name="noInternetMsg">No Internet Connection Found</string>
+    <string name="apiErrorMsg">Unable to get response from API</string>
+    <string name="invalidPassword">Invalid Username Password </string>
+    <string name="invalidUsername">Invalid Email or User Type</string>
+    <string name="hostel">Hostel Rooms</string>
+    <string name="online_course">Online Course</string>
+    <string name="setting">Settings</string>
+    <string name="notScheduled">Not Scheduled</string>
+    <string name="blank"> </string>
+    <string name="noData"> No Data Found! </string>
+    <string name="noQuestionFound">No Question Found, Please contact to Administrator!!! </string>
+    <string name="toDo">Calendar To Do List </string>
+    <string name="edittask">Edit Task</string>
+    <string name="saveLang">Are you sure you want to Save Language?</string>
+    <string name="applyLang">You need to login again to apply Language</string>
+    <string name="reqlang">(You need to Login again for applying Language)</string>
+    <string name="reqcurrency">(You need to Login again for applying Currency)</string>
+    <string name="language"> Language </string>
+    <string name="currency"> Currency </string>
+    <string name="descriptionfield"> The Description field is required!</string>
+    <string name="titlefield"> The Title field is required! </string>
+    <string name="messagefield"> The Message field is required! </string>
+    <string name="select_language"> Select a Language </string>
+    <string name="select_currency"> Select a Currency </string>
+    <string name="chat">Chat</string>
+    <string name="selectChild">Select Child</string>
+    <string name="cancel">Cancel</string>
+    <string name="report_card">Report Card</string>
+    <string name="childList">Child List</string>
+    <string name="logoutMsg">Are you sure you want to logout?</string>
+    <string name="deleteMsg">Are you sure you want to Delete?</string>
+    <string name="Message">Message</string>
+    <string name="yes">Yes</string>
+    <string name="ok">Ok</string>
+    <string name="delete">Delete</string>
+    <string name="successdelete">Successfully Deleted</string>
+    <string name="notice">Notice</string>
+    <string name="noticeDate">Notice Date</string>
+    <string name="publishDate">Publish Date</string>
+    <string name="no">No</string>
+    <string name="consolidate">Consolidated Result</string>
+    <string name="upcomingexam">Upcoming Exams</string>
+    <string name="closedexam">Closed Exams</string>
+    <string name="exam">Examination</string>
+    <string name="exams">Exam</string>
+    <string name="join">Join</string>
+    <string name="exam_schedule">Exam Schedule</string>
+    <string name="rating">Add Rating</string>
+    <string name="ratethis">Rate This</string>
+    <string name="ratings">Rating</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="online_payment">Online Payment</string>
+    <string name="offline_payment">Offline Payment</string>
+    <string name="offlinebankpayment">Offline Bank Payments</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="comment">Comments</string>
+    <string name="Approve">Approve</string>
+    <string name="Pending">Pending</string>
+    <string name="Awaited">Awaited</string>
+    <string name="english">English</string>
+    <string name="science">Science</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="hindi">Hindi</string>
+    <string name="classhost">Class Host</string>
+    <string name="staff">Staff</string>
+    <string name="teachers">Teachers Reviews</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="reportCard">Report Card</string>
+    <string name="day">Day</string>
+    <string name="switchStudent">Switch Child</string>
+    <string name="title"> Title </string>
+    <string name="valid_upto"> Valid Upto </string>
+    <string name="shareby"> Shared By </string>
+    <string name="sharedate"> Share Date </string>
+    <string name="uploaddate"> Upload Date </string>
+    <string name="Documents">Documents</string>
+    <string name="validateregisterid">Please enter registered Email</string>
+    <string name="validatelogintype">Please select login type</string>
+    <string name="validateurl">Please Enter URL</string>
+    <string name="select">Select</string>
+    <string name="commentreq">Comment field is required!</string>
+    <string name="ratingreq">Rating is required!</string>
+    <string name="submitted">Submitted</string>
+    <string name="choosefile">Choose File</string>
+    <string name="evaluated">Evaluated</string>
+    <string name="quiztitle">Quiz Title</string>
+    <string name="noofquestion">Number of Question</string>
+    <string name="fileselected">File Selected</string>
+    <!--OTHERS-->
+
+    <!--HEADING-->
+    <string name="feeheading">Your Fees Details is here!</string>
+    <string name="processfeeheading">Your Processing Fees Details!</string>
+    <string name="offlineheading">Offline Bank Payments</string>
+    <string name="dailyassignmentheading">Your Daily Assignment!</string>
+    <string name="documentheading">Your Documents is here!</string>
+    <string name="downloadheading">Your Download Center is here!</string>
+    <string name="lessonplanheading">Your Lesson Plan is here!</string>
+    <string name="timetableheading">Your Class Timetable is here!</string>
+    <string name="dailycircularheading">Your Lesson Plan is here!</string>
+    <string name="attendanceheading">Your Attendance is here!</string>
+    <string name="visitorbookheading">Your Visitor Book is here!</string>
+    <string name="uploaddocumentheading">Upload Document form Here!</string>
+    <string name="settingheading">Your App Settings is here!</string>
+    <string name="startlessonheading">Your Lessons is here!</string>
+    <string name="appliedleaveheading"> Your Applied Leaves!</string>
+    <string name="coursedetailheading">Your Course Details is here!</string>
+    <string name="courseperformaneheading">Your Course Performance!</string>
+    <string name="examlistheading">Your Examinations is here!</string>
+    <string name="examresultheading">Your Exam Result is here!</string>
+    <string name="examscheduleheading">Your Exam Schedule is here!</string>
+    <string name="cbseexamlistheading">Your CBSE Exam Result is here!</string>
+    <string name="cbsetimetableheading">Your CBSE Exam Schedule is here!</string>
+    <string name="onlineresultheading">Your Online Exam Result is here!</string>
+    <string name="gmeetheading">Your Gmeet Live Classes!</string>
+    <string name="homeworkheading">Your Homework is here!</string>
+    <string name="zoomheading">Your Zoom Live Classes!</string>
+    <string name="behaviourreportheading">Student Behaviour Records is here!</string>
+    <string name="offlinepaymentheading">Your Offline Bank Payments is here!</string>
+    <string name="onlinecourseheading">Your Online Course is here!</string>
+    <string name="onlineexamheading">Your Online Exam is here!</string>
+    <string name="addassignmentheading">Add Daily Assignment!</string>
+    <string name="downloadcenterheading">Your Download Center is here!</string>
+    <string name="editassignmentheading">Edit Daily Assignment!</string>
+    <string name="addleaveheading">Add Leave from here!</string>
+    <string name="timelineheading">Your Timeline is here!</string>
+    <string name="addtimelineheading">Add Timeline from here!</string>
+    <string name="edittimelineheading">Edit Timeline from here!</string>
+    <string name="noticeheading">Your Notice Board is here!</string>
+    <string name="transportheading">Your Transport Routes is here!</string>
+    <string name="hostelheading">Your Hostel Rooms is here!</string>
+    <string name="issuedbookheading">Your Issued Books is here!</string>
+    <string name="bookheading">Your Books is here!</string>
+    <string name="pendingtaskheading">Your Pending Tasks is here!</string>
+    <string name="teacherheading">Your Teachers Reviews is here!</string>
+    <string name="syllabusheading">Your Syllabus Status is here!</string>
+    <string name="syllabuslessonheading">Your Lessons is here!</string>
+    <string name="uploadhomeworkheading">Upload Homework from here!</string>
+    <string name="editleaveheading">Edit Leave From here!</string>
+    <!--HEADING-->
+
+    <!--VISITOR-->
+    <string name="purpose">Purpose</string>
+    <string name="idcard">Id Card</string>
+    <string name="noofperson">No of Person</string>
+    <string name="intime">In Time</string>
+    <string name="outtime">Out Time</string>
+    <!--VISITOR-->
+
+
+</resources>

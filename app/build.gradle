@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+//this code is cracked by dharunmods-Youtube-Channel
+android {
+    namespace 'com.qdocs.smartschool'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.qdocs.smartschool"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "4.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'RestrictedApi'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation "com.squareup.okhttp3:okhttp:3.3.1"
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    // Chart and graph library
+    implementation 'com.github.blackfizz:eazegraph:1.2.5l@aar'
+    implementation 'com.nineoldandroids:library:2.4.0+'
+
+
+}
+apply plugin: 'com.google.gms.google-services'
