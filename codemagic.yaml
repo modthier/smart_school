@@ -1,5 +1,5 @@
 workflows:
-  android-workflows
+  android-workflow:
     name: Build Android App
     enviroment:
       android: true
